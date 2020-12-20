@@ -1,0 +1,43 @@
+public class Head{
+}
+
+public class Syn{
+    public String text;
+    public String pos;
+    public String gen;
+}
+
+public class Mean{
+    public String text;
+}
+
+public class Tr2{
+    public String text;
+}
+
+public class Ex{
+    public String text;
+    public List<Tr2> tr;
+}
+
+public class Tr{
+    public String text;
+    public String pos;
+    public String gen;
+    public List<Syn> syn;
+    public List<Mean> mean;
+    public List<Ex> ex;
+    public String asp;
+}
+
+public class Def{
+    public String text;
+    public String pos;
+    public String ts;
+    public List<Tr> tr;
+}
+
+public class Root{
+    public Head head;
+    public List<Def> def;
+}
